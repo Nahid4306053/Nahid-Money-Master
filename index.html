@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nahid - Money Master </title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        .box_container {
+            max-width: 1440px;
+            padding: 0px 60px;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+
+        @media screen and (max-width:599px) {
+            .box_container {
+                padding: 0px 15px;
+            }
+        }
+
+        @media screen and (min-width:600px) and (max-width:992px) {
+            .box_container {
+                padding: 0px 30px;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body class=" font-sans">
+        <div class="box_container mx-auto">
+            <div class="money_master my-10">
+                <div  class="title text-3xl  md:text-5xl text-center  font-bold text-cyan-600 ">Money Master💰</div>
+                <div class="calcolator_body lg:flex-row flex-col flex mt-10">
+                    <div class="flex-1">
+                        <img class="mx-auto" src="Rename.png" alt="">
+                    </div>  
+                    <div class="flex-1 flex flex-col items-center w-full px-10 box-border">
+                        <div class="total_income    my-5"> 
+                           <h1 class="text-black text-2xl text-center font-bold">Income</h1> 
+                           <div class="totalIncome flex items-center justify-end">
+                            <label for="Income" class=" text-lg font-bold" >Income</label>
+                            <input class="inputVal md:w-96 w-40 bg-gray-300 w-     focus:outline-none ml-5 my-4 p-2" id="Income"  type="number">
+                           </div>
+                           <h1 class="text-black text-2xl text-center font-bold">Expanses </h1> 
+                           <div class="totalIncome flex items-center justify-end">
+                            <label for="Food" class=" text-lg font-bold" >Food:</label>
+                            <input class="inputVal md:w-96 w-40 bg-gray-300     focus:outline-none ml-5 my-3 p-2" id="Food"  type="number">
+                           </div>                         
+                             <div class="totalIncome flex items-center justify-end">
+                            <label for="Rent" class=" text-lg font-bold" > Rent:</label>
+                            <input class="inputVal md:w-96 w-40 bg-gray-300     focus:outline-none ml-5 my-3 p-2" id="Rent"  type="number">
+                           </div>                         
+                             <div class="totalIncome flex items-center justify-end">
+                            <label for="Cloth" class=" text-lg font-bold" > Cloth:</label>
+                            <input class="inputVal md:w-96 w-40 bg-gray-300  focus:outline-none ml-5 my-3 p-2" id="Cloth"  type="number">
+                           </div>                           
+                             <div class="totalIncome flex items-center justify-end">
+                            <label for="Others" class=" text-lg font-bold" > Others:</label>
+                            <input class="inputVal md:w-96 w-40 bg-gray-300  focus:outline-none ml-5 my-3 p-2" id="Others"  type="number">
+                           </div>
+                        </div>
+                        <button class="buttons py-3 px-10  rounded-lg capitalize text-xl text-white  bg-cyan-600">Calculate Items</button>
+                        
+                        <h1 class="capitalize md:text-2xl text-xl font-bold text-gray-800 mt-4">total Expancess: <sapn class="inputVal">0</sapn></h1>
+                        <h1 class="capitalize md:text-2xl text-xl font-bold text-gray-800 mt-4">Balance: <sapn class="inputVal">0</sapn></h1>
+                    
+                        <div class="totalIncome flex flex-col md:flex-row md:my-0 my-5 items-center justify-end">
+                            <label for="Others" class=" text-lg font-bold" > Save(%):</label>
+                            <input  class="inputVal  bg-gray-300  focus:outline-none ml-5 my-4 p-2" id="Others" type="number">
+                            <button class="buttons py-3 px-10  rounded-lg capitalize  text-white  bg-cyan-600 ml-2">Saving</button>
+                           </div>
+
+                           <h1 class="capitalize text-center md:text-2xl text-xl font-bold text-gray-800 mt-4">Saving Amount: <sapn class="inputVal">0</sapn></h1>
+                           <h1 class="capitalize text-center md:text-2xl text-xl  font-bold text-gray-800 mt-4">Remaining Balance: <sapn class="inputVal">0</sapn></h1>
+                    </div>  
+                </div>
+          </div>     
+        </div>
+
+        <script src="index.js"></script>
+</body>
+
+</html>
